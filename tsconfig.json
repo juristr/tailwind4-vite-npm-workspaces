@@ -5,6 +5,36 @@
   "references": [
     {
       "path": "./apps/shop"
+    },
+    {
+      "path": "./packages/orders/data-access-order"
+    },
+    {
+      "path": "./packages/orders/feat-create-order"
+    },
+    {
+      "path": "./packages/orders/feat-current-orders"
+    },
+    {
+      "path": "./packages/orders/ui-order-detail"
+    },
+    {
+      "path": "./packages/products/data-access-products"
+    },
+    {
+      "path": "./packages/products/feat-product-detail"
+    },
+    {
+      "path": "./packages/products/feat-product-list"
+    },
+    {
+      "path": "./packages/products/ui-product-detail"
+    },
+    {
+      "path": "./packages/shared/ui"
+    },
+    {
+      "path": "./packages/shared/utils"
     }
   ]
 }
