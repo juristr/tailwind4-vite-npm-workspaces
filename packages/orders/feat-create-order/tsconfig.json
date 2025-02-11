@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../ui-order-detail"
+    },
+    {
+      "path": "../data-access-order"
+    },
+    {
       "path": "./tsconfig.lib.json"
     }
   ],

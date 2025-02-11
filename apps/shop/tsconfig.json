@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/orders/feat-create-order"
+    },
+    {
+      "path": "../../packages/orders/feat-current-orders"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

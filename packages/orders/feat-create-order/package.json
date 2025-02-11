@@ -10,5 +10,8 @@
       "default": "./src/index.ts"
     },
     "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@aishop/data-access-order": "0.0.1"
   }
 }
