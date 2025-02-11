@@ -2,6 +2,8 @@
 // import styles from './app.module.css';
 import { FeatCreateOrder } from '@aishop/feat-create-order';
 import { FeatCurrentOrders } from '@aishop/feat-current-orders';
+import { FeatProductList } from '@aishop/feat-product-list';
+import { FeatProductDetail } from '@aishop/feat-product-detail';
 
 export function App() {
   return (
@@ -14,6 +16,14 @@ export function App() {
       <div>
         <h2>Current Orders</h2>
         <FeatCurrentOrders />
+      </div>
+      <div>
+        <h2>Product List</h2>
+        <FeatProductList />
+      </div>
+      <div>
+        <h2>Product Detail</h2>
+        <FeatProductDetail />
       </div>
     </div>
   );

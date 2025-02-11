@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../ui-product-detail"
+    },
+    {
+      "path": "../data-access-products"
+    },
+    {
       "path": "./tsconfig.lib.json"
     }
   ],

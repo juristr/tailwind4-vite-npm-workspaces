@@ -32,6 +32,12 @@
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
     {
+      "path": "../../packages/products/feat-product-detail/tsconfig.lib.json"
+    },
+    {
+      "path": "../../packages/products/feat-product-list/tsconfig.lib.json"
+    },
+    {
       "path": "../../packages/orders/feat-current-orders/tsconfig.lib.json"
     },
     {
