@@ -4,10 +4,12 @@ import { FeatCreateOrder } from '@aishop/feat-create-order';
 import { FeatCurrentOrders } from '@aishop/feat-current-orders';
 import { FeatProductList } from '@aishop/feat-product-list';
 import { FeatProductDetail } from '@aishop/feat-product-detail';
+import { Ui } from '@aishop/ui';
 
 export function App() {
   return (
     <div>
+      <Ui />
       <h1>Shop App</h1>
       <div>
         <h2>Create Order</h2>
