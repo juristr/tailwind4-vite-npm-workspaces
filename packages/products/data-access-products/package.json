@@ -13,5 +13,11 @@
     },
     "./package.json": "./package.json"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "nx": {
+    "tags": [
+      "scope:products",
+      "type:data-access"
+    ]
+  }
 }

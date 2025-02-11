@@ -13,5 +13,11 @@
   },
   "dependencies": {
     "@aishop/data-access-order": "0.0.1"
+  },
+  "nx": {
+    "tags": [
+      "scope:orders",
+      "type:feature"
+    ]
   }
 }
