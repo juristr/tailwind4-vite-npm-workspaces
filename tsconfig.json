@@ -35,9 +35,6 @@
     },
     {
       "path": "./packages/shared/utils"
-    },
-    {
-      "path": "./packages/products/product-list-filter"
     }
   ]
 }
