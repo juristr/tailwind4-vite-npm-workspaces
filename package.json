@@ -41,6 +41,7 @@
     "apps/*",
     "packages/orders/*",
     "packages/products/*",
-    "packages/shared/*"
+    "packages/shared/*",
+    "packages"
   ]
 }

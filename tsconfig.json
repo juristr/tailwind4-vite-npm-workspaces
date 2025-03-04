@@ -35,6 +35,9 @@
     },
     {
       "path": "./packages/shared/utils"
+    },
+    {
+      "path": "./packages"
     }
   ]
 }
