@@ -37,7 +37,7 @@
       "path": "./packages/shared/utils"
     },
     {
-      "path": "./packages"
+      "path": "./packages/orders/feat-past-orders"
     }
   ]
 }
