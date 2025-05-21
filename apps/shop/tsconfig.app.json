@@ -32,9 +32,6 @@
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
     {
-      "path": "../../packages/shared/ui/tsconfig.lib.json"
-    },
-    {
       "path": "../../packages/products/feat-product-detail/tsconfig.lib.json"
     },
     {
