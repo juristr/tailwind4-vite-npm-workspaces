@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/shared/ui"
+    },
+    {
       "path": "../../packages/products/feat-product-detail"
     },
     {
