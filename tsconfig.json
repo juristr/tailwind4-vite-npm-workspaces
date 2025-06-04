@@ -41,9 +41,6 @@
     },
     {
       "path": "./apps/shop-e2e"
-    },
-    {
-      "path": "./apps/testtailwindapp"
     }
   ]
 }
