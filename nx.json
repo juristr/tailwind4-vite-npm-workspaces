@@ -15,9 +15,7 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": {
-          "targetName": "typecheck"
-        },
+        "typecheck": { "targetName": "typecheck" },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -40,12 +38,7 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
     {
       "plugin": "@nx/react/router-plugin",
       "options": {
@@ -59,12 +52,8 @@
     }
   ],
   "targetDefaults": {
-    "test": {
-      "dependsOn": ["^build"]
-    },
-    "dev": {
-      "dependsOn": ["^build"]
-    }
+    "test": { "dependsOn": ["^build"] },
+    "dev": { "dependsOn": ["^build"] }
   },
   "generators": {
     "@nx/react": {
@@ -74,19 +63,11 @@
         "linter": "none",
         "bundler": "vite"
       },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "none",
-        "unitTestRunner": "none"
-      }
+      "component": { "style": "css" },
+      "library": { "style": "css", "linter": "none", "unitTestRunner": "none" }
     }
   },
-  "sync": {
-    "globalGenerators": ["@nx/powerpack-owners:sync-codeowners-file"]
-  },
+  "sync": { "globalGenerators": ["@nx/powerpack-owners:sync-codeowners-file"] },
   "owners": {
     "format": "github",
     "patterns": [
@@ -126,5 +107,7 @@
         "projects": ["tag:type:util"]
       }
     ]
-  }
+  },
+  "nxCloudId": "684057aba2558f95da49d4fa",
+  "nxCloudUrl": "https://staging.nx.app"
 }
