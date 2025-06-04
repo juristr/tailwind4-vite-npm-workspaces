@@ -2,7 +2,6 @@
   "name": "@aishop/shop",
   "version": "0.0.1",
   "private": true,
-  "type": "module",
   "dependencies": {},
   "devDependencies": {
     "tailwindcss": "^3.4.1",
