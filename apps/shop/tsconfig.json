@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../packages/products/feat-product-list"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

@@ -30,5 +30,9 @@
     "vitest.config.mts"
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
-  "references": []
+  "references": [
+    {
+      "path": "../../packages/products/feat-product-list/tsconfig.lib.json"
+    }
+  ]
 }

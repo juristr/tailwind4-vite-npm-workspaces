@@ -11,6 +11,9 @@
     },
     "./package.json": "./package.json"
   },
+  "dependencies": {
+    "@aishop/data-access-products": "*"
+  },
   "nx": {
     "tags": [
       "scope:products",
