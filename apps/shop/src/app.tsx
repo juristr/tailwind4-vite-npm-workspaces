@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import ProductGrid from './components/ProductGrid';
+import { ProductGrid } from '@aishop/feat-product-list';
 import Footer from './components/Footer';
 
 export function App() {

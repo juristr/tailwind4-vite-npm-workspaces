@@ -30,21 +30,5 @@
     "vitest.config.mts"
   ],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
-  "references": [
-    {
-      "path": "../../packages/shared/ui/tsconfig.lib.json"
-    },
-    {
-      "path": "../../packages/products/feat-product-detail/tsconfig.lib.json"
-    },
-    {
-      "path": "../../packages/products/feat-product-list/tsconfig.lib.json"
-    },
-    {
-      "path": "../../packages/orders/feat-current-orders/tsconfig.lib.json"
-    },
-    {
-      "path": "../../packages/orders/feat-create-order/tsconfig.lib.json"
-    }
-  ]
+  "references": []
 }

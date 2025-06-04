@@ -1,7 +1,8 @@
 import React from 'react';
-import ProductCard from './ProductCard';
+import ProductCard, { ProductCardProps } from './ProductCard';
 
-const products = [
+// TODO: Replace with real data or props
+const products: ProductCardProps[] = [
   {
     id: 1,
     name: 'Wireless Noise-Cancelling Headphones',
@@ -80,6 +81,14 @@ const products = [
   },
 ];
 
-// ProductGrid moved to feature library: packages/products/feat-product-list
+export function ProductGrid() {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {products.map((product) => (
+        <ProductCard key={product.id} {...product} />
+      ))}
+    </div>
+  );
+}
 
 export default ProductGrid;
