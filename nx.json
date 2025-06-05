@@ -15,7 +15,9 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": { "targetName": "typecheck" },
+        "typecheck": {
+          "targetName": "typecheck"
+        },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -51,8 +53,12 @@
     }
   ],
   "targetDefaults": {
-    "test": { "dependsOn": ["^build"] },
-    "dev": { "dependsOn": ["^build"] }
+    "test": {
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    }
   },
   "generators": {
     "@nx/react": {
@@ -62,11 +68,19 @@
         "linter": "none",
         "bundler": "vite"
       },
-      "component": { "style": "css" },
-      "library": { "style": "css", "linter": "none", "unitTestRunner": "none" }
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "none",
+        "unitTestRunner": "none"
+      }
     }
   },
-  "sync": { "globalGenerators": ["@nx/powerpack-owners:sync-codeowners-file"] },
+  "sync": {
+    "globalGenerators": ["@nx/powerpack-owners:sync-codeowners-file"]
+  },
   "owners": {
     "format": "github",
     "patterns": [
