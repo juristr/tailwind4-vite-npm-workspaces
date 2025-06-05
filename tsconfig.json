@@ -38,9 +38,6 @@
     },
     {
       "path": "./packages/orders/feat-past-orders"
-    },
-    {
-      "path": "./apps/shop-e2e"
     }
   ]
 }
