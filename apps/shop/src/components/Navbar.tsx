@@ -1,5 +1,4 @@
-import React from 'react';
-import { ShoppingCart, Search, User, Menu, Heart, Package } from 'lucide-react';
+import { ShoppingCart, Search, User, Menu, Heart } from 'lucide-react';
 
 const Navbar = () => {
   return (
