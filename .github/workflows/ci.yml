@@ -24,7 +24,7 @@ jobs:
           filter: tree:0
           fetch-depth: 0
 
-      # - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build" --with-env-vars="ANTHROPIC_API_KEY"
+      # - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build"
 
       # Cache node_modules
       - uses: actions/setup-node@v4
@@ -36,8 +36,5 @@ jobs:
       # - run: npx playwright install --with-deps
       - uses: nrwl/nx-set-shas@v4
 
-      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: npx nx-cloud record -- echo Hello World
-      # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
-      # When you enable task distribution, run the e2e-ci task instead of e2e
+      # run build tests and lints
       - run: npx nx affected -t lint test build
