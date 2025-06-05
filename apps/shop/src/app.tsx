@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import { ProductDetailPage } from '@aishop/feat-product-detail';
+import { ProductDetailPage } from 'aishop/feat-product-detail';
 
 export function App() {
   return (

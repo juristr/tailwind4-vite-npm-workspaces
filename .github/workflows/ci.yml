@@ -1,10 +1,9 @@
 name: CI
 
-# test
-
 env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.CI_TOKEN }}
   ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  NX_CI_EXECUTION_ENV: 'aishop'
 
 on:
   push:
