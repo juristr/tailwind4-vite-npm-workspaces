@@ -33,9 +33,6 @@
   "references": [
     {
       "path": "../../packages/products/feat-product-list/tsconfig.lib.json"
-    },
-    {
-      "path": "../../packages/products/feat-product-detail/tsconfig.lib.json"
     }
   ]
 }

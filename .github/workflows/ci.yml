@@ -24,7 +24,7 @@ jobs:
           filter: tree:0
           fetch-depth: 0
 
-      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build"
+      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build" --with-env-vars="ANTHROPIC_API_KEY"
 
       # Cache node_modules
       - uses: actions/setup-node@v4
