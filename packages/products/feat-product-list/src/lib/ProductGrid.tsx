@@ -6,7 +6,7 @@ export function ProductGrid() {
 
   return (
     <div
-      data-testid="productgrid"
+      data-testid="product-grid"
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
     >
       {products.map((product) => (

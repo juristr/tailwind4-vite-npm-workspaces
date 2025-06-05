@@ -6,6 +6,9 @@
       "path": "../../packages/products/feat-product-list"
     },
     {
+      "path": "../../packages/products/feat-product-detail"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

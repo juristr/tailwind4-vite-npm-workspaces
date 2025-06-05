@@ -93,6 +93,10 @@ export function getProducts(): Product[] {
   return products;
 }
 
+export function getProductById(id: number): Product | undefined {
+  return products.find(product => product.id === id);
+}
+
 export function dataAccessProducts(): string {
   return `data-access-products: ${utils()}`;
 }
