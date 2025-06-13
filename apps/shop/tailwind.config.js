@@ -7,11 +7,11 @@ module.exports = {
       __dirname,
       '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html,jsx}'
     ),
-    join(
-      __dirname,
-      '../..',
-      'packages/**/{src,lib,components}/**/*!(*.stories|*.spec).{ts,tsx,html,jsx}'
-    ),
+    // join(
+    //   __dirname,
+    //   '../..',
+    //   'packages/**/{src,lib,components}/**/*!(*.stories|*.spec).{ts,tsx,html,jsx}'
+    // ),
   ],
   theme: {
     extend: {},
