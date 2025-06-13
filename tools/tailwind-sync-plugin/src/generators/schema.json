@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "UpdateTailwindGlobs",
+  "type": "object",
+  "properties": {},
+  "required": []
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@aishop/tailwind-sync-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/js:tsc",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "options": {
+          "outputPath": "tools/tailwind-sync-plugin/dist",
+          "main": "tools/tailwind-sync-plugin/src/index.ts",
+          "tsConfig": "tools/tailwind-sync-plugin/tsconfig.lib.json",
+          "rootDir": "tools/tailwind-sync-plugin/src",
+          "generatePackageJson": false,
+          "assets": [
+            {
+              "input": "./tools/tailwind-sync-plugin/src",
+              "glob": "**/!(*.ts)",
+              "output": "."
+            },
+            {
+              "input": "./tools/tailwind-sync-plugin/src",
+              "glob": "**/*.d.ts",
+              "output": "."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@nx/devkit": "21.1.2",
+    "tslib": "^2.3.0"
+  },
+  "generators": "./generators.json",
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo",
+    "generators.json"
+  ]
+}

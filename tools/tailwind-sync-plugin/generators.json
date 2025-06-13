@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "update-tailwind-globs": {
+      "factory": "./dist/generators/update-tailwind-globs",
+      "schema": "./dist/generators/schema.json",
+      "description": "update-tailwind-globs generator"
+    }
+  }
+}

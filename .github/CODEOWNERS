@@ -27,11 +27,17 @@
 /packages/orders/feat-create-order/ @team-orders sarah mike jenny
 
 # Orders Domain Team
+/packages/orders/feat-cancel-order/ @team-orders sarah mike jenny
+
+# Orders Domain Team
 /packages/orders/feat-past-orders/ @team-orders sarah mike jenny
 
 # Orders Domain Team
 # UI/UX Team
 /packages/orders/ui-order-detail/ @team-orders sarah mike jenny @team-design maya chris
+
+# Orders Domain Team
+/packages/orders/feat-orders/ @team-orders sarah mike jenny
 
 # Platform Team
 # Shared Utils Owners
