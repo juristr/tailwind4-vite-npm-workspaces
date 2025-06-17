@@ -1,0 +1,40 @@
+name: CI
+
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.CI_TOKEN }}
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  NX_CI_EXECUTION_ENV: 'aishop'
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: tree:0
+          fetch-depth: 0
+
+      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build" --with-env-vars="ANTHROPIC_API_KEY"
+
+      # Cache node_modules
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - run: npm ci --legacy-peer-deps
+      # - run: npx playwright install --with-deps
+      - uses: nrwl/nx-set-shas@v4
+
+      # run build tests and lints
+      - run: npx nx affected -t lint test build
