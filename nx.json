@@ -52,15 +52,11 @@
     }
   ],
   "targetDefaults": {
-    "test": {
-      "dependsOn": ["^build"]
-    },
-    "dev": {
+    "build": {
       "dependsOn": ["^build"]
     },
     "@nx/js:tsc": {
       "cache": true,
-      "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     }
   },
