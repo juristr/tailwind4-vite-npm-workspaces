@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
+/* nx-tailwind-sources:start */
 @source "../../../packages/products/data-access-products";
 @source "../../../packages/products/feat-product-detail";
 @source "../../../packages/products/feat-product-list";
 @source "../../../packages/products/ui-product-detail";
 @source "../../../packages/shared/ui";
 @source "../../../packages/shared/utils";
-
-
+/* nx-tailwind-sources:end */
 
 /* Custom styles for glitch effect */
 @keyframes glitch {
