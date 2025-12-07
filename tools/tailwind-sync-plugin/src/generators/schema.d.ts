@@ -1,1 +1,3 @@
-export interface UpdateTailwindGlobsGeneratorSchema {}
+export interface UpdateTailwindGlobsGeneratorSchema {
+  additionalStylePaths?: string[];
+}
